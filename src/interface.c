@@ -11,9 +11,9 @@ int main(){
   while(strcmp(str, "quit")){
     int words = count_words(str);
     printf("%d\n", words);
+    print_tokens(tokenize(str));
     printf("Enter string to copy or \"quit\" to finish execution.\n$");
     scanf("%[^\n]%*c", str);
     printf("%s\n", str);
- 
   }
 }
